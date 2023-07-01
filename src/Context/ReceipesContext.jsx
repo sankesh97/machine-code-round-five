@@ -12,6 +12,8 @@ export const ReceipesProvider = ({ children }) => {
     if (!localStorage.getItem('receipesList')) {
       // setReceipeList(localStorage.getItem('receipesList'));
       localStorage.setItem('receipesList', receipeList);
+    } else {
+      JSON.stringify(receipeList);
     }
   };
 
@@ -19,6 +21,11 @@ export const ReceipesProvider = ({ children }) => {
     setCurrentReceipe(
       receipeList.find((currentReceipe) => currentReceipe.id === receipeId)
     );
+  };
+
+  const deleteHandler = (id) => {
+    setReceipeList((prevState) => prevState.filter((item) => item.id !== id));
+    localStorage.setItem('receipesList', JSON.stringify(receipeList));
   };
 
   return (
@@ -29,6 +36,7 @@ export const ReceipesProvider = ({ children }) => {
         getReceipesList,
         getSingleReceipe,
         currentReceipe,
+        deleteHandler,
       }}
     >
       {children}
