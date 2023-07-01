@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { ReceipesContext } from '../Context/ReceipesContext';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Card from '../Components/Card';
 
 const SingleReceipe = () => {
@@ -13,6 +13,9 @@ const SingleReceipe = () => {
 
   return (
     <div className='card-body'>
+      <Link to='/'>
+        <button className='btn btn-primary'>Go back</button>
+      </Link>
       {currentReceipe && (
         <>
           <h1 className='text-center m-2'>{currentReceipe.title}</h1>
