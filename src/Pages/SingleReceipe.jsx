@@ -12,7 +12,7 @@ const SingleReceipe = () => {
   });
 
   return (
-    <div>
+    <div className='card-body'>
       {currentReceipe && (
         <>
           <h1 className='text-center m-2'>{currentReceipe.title}</h1>

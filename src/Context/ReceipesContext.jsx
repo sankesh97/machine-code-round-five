@@ -7,14 +7,10 @@ export const ReceipesContext = createContext();
 export const ReceipesProvider = ({ children }) => {
   const [receipeList, setReceipeList] = useState(initialReceipes);
   const [currentReceipe, setCurrentReceipe] = useState();
-
+  console.log(receipeList);
   const getReceipesList = () => {
-    if (
-      receipeList.length <
-      JSON.parse(localStorage.getItem('receipesList')).length
-    ) {
-      setReceipeList(localStorage.getItem('receipesList'));
-    } else {
+    if (!localStorage.getItem('receipesList')) {
+      // setReceipeList(localStorage.getItem('receipesList'));
       localStorage.setItem('receipesList', receipeList);
     }
   };

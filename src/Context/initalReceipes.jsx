@@ -59,7 +59,8 @@ export const initialReceipes = [
       'Serve the Chicken Tikka Masala with steamed rice or naan bread.',
       'Enjoy!',
     ],
-    image_link: 'https://example.com/chicken_tikka_masala.jpg',
+    image_link:
+      'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/chicken-tikka-masala.jpg',
   },
   {
     id: 'de3c0d45-6920-4d5c-8d4f-3105c136a5d9',
@@ -90,7 +91,8 @@ export const initialReceipes = [
       'Serve the classic cheeseburgers with your favorite sides.',
       'Enjoy!',
     ],
-    image_link: 'https://example.com/classic_cheeseburger.jpg',
+    image_link:
+      'https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2560%2Cc_limit/Smashburger-recipe-120219.jpg',
   },
   {
     id: '5a051e27-b26f-4e43-a4d5-91ce02ff07f7',
@@ -113,7 +115,8 @@ export const initialReceipes = [
       'Serve the Caprese salad as a side dish or appetizer.',
       'Enjoy!',
     ],
-    image_link: 'https://example.com/caprese_salad.jpg',
+    image_link:
+      'https://images.immediate.co.uk/production/volatile/sites/30/2022/05/Caprese-salad-8f218a3.png',
   },
   {
     id: '04b1f49c-8552-4e19-b6e7-365e346e65f8',
@@ -146,7 +149,8 @@ export const initialReceipes = [
       'Serve the chicken stir-fry over steamed rice or noodles.',
       'Enjoy!',
     ],
-    image_link: 'https://example.com/chicken_stir_fry.jpg',
+    image_link:
+      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-14362_11-f85caa7.jpg?quality=90&resize=440,400',
   },
   {
     id: '209a327a-49f6-4f48-9f8f-049e3e685a0a',
@@ -175,6 +179,7 @@ export const initialReceipes = [
       'Allow the cookies to cool on the baking sheets for a few minutes, then transfer them to wire racks to cool completely.',
       'Enjoy the delicious chocolate chip cookies!',
     ],
-    image_link: 'https://example.com/chocolate_chip_cookies.jpg',
+    image_link:
+      'https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg',
   },
 ];

@@ -1,9 +1,5 @@
 const Card = ({ children }) => {
-  return (
-    <div className='card'>
-      <div className='card-body'>{children}</div>
-    </div>
-  );
+  return <div className='card'>{children}</div>;
 };
 
 export default Card;
