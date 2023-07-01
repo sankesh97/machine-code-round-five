@@ -1,15 +1,16 @@
-import { Route, Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Homepage from './Pages/Homepage';
+import SingleReceipe from './Pages/SingleReceipe';
 
 function App() {
   return (
-    <>
-      <Router>
+    <div className='container'>
+      <Routes>
         <Route path='/' element={<Homepage />}></Route>
-        <Route path='/:Id' element={<Homepage />}></Route>
-      </Router>
-    </>
+        <Route path='/:receipeId' element={<SingleReceipe />}></Route>
+      </Routes>
+    </div>
   );
 }
 
